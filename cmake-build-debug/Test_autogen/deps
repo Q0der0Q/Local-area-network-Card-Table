@@ -1,15 +1,16 @@
 Test_autogen/timestamp: \
-	C:/Users/13050154790/Desktop/Test/CMakeLists.txt \
-	C:/Users/13050154790/Desktop/Test/cmake-build-debug/CMakeFiles/3.30.5/CMakeCCompiler.cmake \
-	C:/Users/13050154790/Desktop/Test/cmake-build-debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake \
-	C:/Users/13050154790/Desktop/Test/cmake-build-debug/CMakeFiles/3.30.5/CMakeRCCompiler.cmake \
-	C:/Users/13050154790/Desktop/Test/cmake-build-debug/CMakeFiles/3.30.5/CMakeSystem.cmake \
-	C:/Users/13050154790/Desktop/Test/cmake-build-debug/Test_autogen/moc_predefs.h \
-	C:/Users/13050154790/Desktop/Test/src/chatwindow.cpp \
-	C:/Users/13050154790/Desktop/Test/src/chatwindow.h \
-	C:/Users/13050154790/Desktop/Test/src/gamewindow.cpp \
-	C:/Users/13050154790/Desktop/Test/src/gamewindow.h \
-	C:/Users/13050154790/Desktop/Test/src/main.cpp \
+	C:/Users/13050154790/Desktop/Local-area-network\ Card\ Table/CMakeLists.txt \
+	C:/Users/13050154790/Desktop/Local-area-network\ Card\ Table/cmake-build-debug/CMakeFiles/3.30.5/CMakeCCompiler.cmake \
+	C:/Users/13050154790/Desktop/Local-area-network\ Card\ Table/cmake-build-debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake \
+	C:/Users/13050154790/Desktop/Local-area-network\ Card\ Table/cmake-build-debug/CMakeFiles/3.30.5/CMakeRCCompiler.cmake \
+	C:/Users/13050154790/Desktop/Local-area-network\ Card\ Table/cmake-build-debug/CMakeFiles/3.30.5/CMakeSystem.cmake \
+	C:/Users/13050154790/Desktop/Local-area-network\ Card\ Table/cmake-build-debug/Test_autogen/moc_predefs.h \
+	C:/Users/13050154790/Desktop/Local-area-network\ Card\ Table/include/chatwindow.h \
+	C:/Users/13050154790/Desktop/Local-area-network\ Card\ Table/include/gamewindow.h \
+	C:/Users/13050154790/Desktop/Local-area-network\ Card\ Table/include/general.h \
+	C:/Users/13050154790/Desktop/Local-area-network\ Card\ Table/src/chatwindow.cpp \
+	C:/Users/13050154790/Desktop/Local-area-network\ Card\ Table/src/gamewindow.cpp \
+	C:/Users/13050154790/Desktop/Local-area-network\ Card\ Table/src/main.cpp \
 	D:/CLion\ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake \
 	D:/CLion\ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake \
 	D:/CLion\ 2024.3.4/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \

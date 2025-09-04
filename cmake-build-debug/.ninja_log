@@ -1,9 +1,17 @@
 # ninja log v6
 9079	10170	7787089771389872	Test.exe	fe7b4403b6c29823
-253	7125	7787089683122030	CMakeFiles/Test.dir/src/main.cpp.obj	8e9ef14e71936950
-1496	8718	7787081148519738	CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.obj	5e9b63f9db854010
-9	880	7787092847385537	build.ninja	c10d006974d0362
-19	251	7787089680782916	Test_autogen/timestamp	c599db3b12d771b2
-258	9079	7787089683172006	CMakeFiles/Test.dir/src/chatwindow.cpp.obj	33568d47bd79c418
-1827	7983	7787065445032902	CMakeFiles/Test.dir/src/gamewindow.cpp.obj	b69e069b610bfaa4
-19	251	7787089680782916	Test_autogen/mocs_compilation.cpp	c599db3b12d771b2
+220	7382	7787101847642849	CMakeFiles/Test.dir/src/main.cpp.obj	86abe35acfbbf1b4
+216	321	7787101847602875	CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.obj	9b498f1a0fa8f91a
+9	880	7787102457180645	build.ninja	c10d006974d0362
+14	215	7787101846983256	Test_autogen/timestamp	e77db4280f7bfc78
+224	9893	7787101847682810	CMakeFiles/Test.dir/src/chatwindow.cpp.obj	f459a4e2861037aa
+229	6779	7787101847739015	CMakeFiles/Test.dir/src/gamewindow.cpp.obj	f85f1a3ac0b93ebe
+14	215	7787101846983256	Test_autogen/mocs_compilation.cpp	e77db4280f7bfc78
+14	215	7787101846983256	C:/Users/13050154790/Desktop/Local-area-network Card Table/cmake-build-debug/Test_autogen/timestamp	e77db4280f7bfc78
+14	215	7787101846983256	C:/Users/13050154790/Desktop/Local-area-network Card Table/cmake-build-debug/Test_autogen/mocs_compilation.cpp	e77db4280f7bfc78
+14	1559	7787102483791036	Test_autogen/timestamp	e77db4280f7bfc78
+14	1559	7787102483791036	Test_autogen/mocs_compilation.cpp	e77db4280f7bfc78
+14	1559	7787102483791036	C:/Users/13050154790/Desktop/Local-area-network Card Table/cmake-build-debug/Test_autogen/timestamp	e77db4280f7bfc78
+14	1559	7787102483791036	C:/Users/13050154790/Desktop/Local-area-network Card Table/cmake-build-debug/Test_autogen/mocs_compilation.cpp	e77db4280f7bfc78
+1560	8859	7787102484750429	CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.obj	9b498f1a0fa8f91a
+8860	9665	7787102557747056	Test.exe	fe7b4403b6c29823
