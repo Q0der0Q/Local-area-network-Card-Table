@@ -1,0 +1,9 @@
+# ninja log v6
+9079	10170	7787089771389872	Test.exe	fe7b4403b6c29823
+253	7125	7787089683122030	CMakeFiles/Test.dir/src/main.cpp.obj	8e9ef14e71936950
+1496	8718	7787081148519738	CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.obj	5e9b63f9db854010
+9	880	7787092847385537	build.ninja	c10d006974d0362
+19	251	7787089680782916	Test_autogen/timestamp	c599db3b12d771b2
+258	9079	7787089683172006	CMakeFiles/Test.dir/src/chatwindow.cpp.obj	33568d47bd79c418
+1827	7983	7787065445032902	CMakeFiles/Test.dir/src/gamewindow.cpp.obj	b69e069b610bfaa4
+19	251	7787089680782916	Test_autogen/mocs_compilation.cpp	c599db3b12d771b2
