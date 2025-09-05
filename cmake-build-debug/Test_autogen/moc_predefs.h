@@ -186,7 +186,6 @@
 #define __GNUG__ 13
 #define __LONG_LONG_MAX__ 0x7fffffffffffffffLL
 #define __SIZEOF_SIZE_T__ 8
-#define __BFLT16_HAS_INFINITY__ 1
 #define __FLT64X_MIN_EXP__ (-16381)
 #define __SIZEOF_WINT_T__ 2
 #define __FLT32X_DIG__ 15
@@ -459,6 +458,7 @@
 #define __FLT64_MIN__ 2.22507385850720138309023271733240406e-308F64
 #define __INT_LEAST32_WIDTH__ 32
 #define __INTMAX_TYPE__ long long int
+#define __BFLT16_HAS_INFINITY__ 1
 #define __GLIBCXX_BITSIZE_INT_N_0 128
 #define __FLT32X_HAS_QUIET_NAN__ 1
 #define __ATOMIC_CONSUME 1
