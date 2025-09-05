@@ -1,5 +1,5 @@
-C:/Users/13050154790/Desktop/Local-area-network Card Table/cmake-build-debug/CMakeFiles/Test.dir
-C:/Users/13050154790/Desktop/Local-area-network Card Table/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/13050154790/Desktop/Local-area-network Card Table/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/13050154790/Desktop/Local-area-network Card Table/cmake-build-debug/CMakeFiles/Test_autogen_timestamp_deps.dir
-C:/Users/13050154790/Desktop/Local-area-network Card Table/cmake-build-debug/CMakeFiles/Test_autogen.dir
+C:/Users/zhanghengyi/CLionProjects/Local-area-network-Card-Table/cmake-build-debug/CMakeFiles/Test.dir
+C:/Users/zhanghengyi/CLionProjects/Local-area-network-Card-Table/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/zhanghengyi/CLionProjects/Local-area-network-Card-Table/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/zhanghengyi/CLionProjects/Local-area-network-Card-Table/cmake-build-debug/CMakeFiles/Test_autogen_timestamp_deps.dir
+C:/Users/zhanghengyi/CLionProjects/Local-area-network-Card-Table/cmake-build-debug/CMakeFiles/Test_autogen.dir

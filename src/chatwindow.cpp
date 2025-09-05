@@ -7,6 +7,7 @@
 #include <QNetworkInterface>
 #include <QInputDialog>
 #include <random>
+#include <ctime>
 
 ChatWindow::ChatWindow(QWidget *parent)
     : QWidget(parent), tcpServer(nullptr), tcpSocket(nullptr), udpSocket(nullptr), serverPort(0), broadcastTimer(nullptr), isReady(false)
@@ -556,16 +557,73 @@ void ChatWindow::onAssignIdentities() {
     std::random_device rd;
     std::mt19937 g(rd());
     std::shuffle(identities.begin(), identities.end(), g);
+
+    // 获取当前选择的拓展包
+    QStringList selectedExpansions = getSelectedExpansions();
+
+    // 从选择的拓展包中获取武将池
+    QList<General> generalPool;
+    for (const General &general : kAllGenerals) {
+        if (selectedExpansions.contains(general.expansion)) {
+            generalPool.append(general);
+        }
+    }
+
     // 分配给所有人（房主第一个）
     QList<QTcpSocket*> allSockets = clientSockets;
     allSockets.prepend(nullptr); // 房主用nullptr
+
     for (int i = 0; i < identities.size(); ++i) {
         QString msg = "__IDENTITY__:" + identities[i];
         if (i == 0) {
             // 房主
             gameWindow->setIdentity(identities[i]);
+
+            // 如果房主是主公，则提供武将选择
+            if (identities[i] == "主公") {
+                // 随机抽取8个武将供主公选择
+                if (generalPool.size() < 8) {
+                    chatDisplay->append("警告：武将池不足8个，将使用所有可用武将");
+                }
+
+                // 打乱武将池并取前8个(或全部)
+                std::shuffle(generalPool.begin(), generalPool.end(), g);
+                QList<General> lordGenerals;
+                int count = qMin(8, generalPool.size());
+                for (int j = 0; j < count; ++j) {
+                    lordGenerals.append(generalPool[j]);
+                }
+
+                // 移除这些武将，避免其他玩家重复抽到
+                for (int j = 0; j < count; ++j) {
+                    generalPool.removeAt(0);
+                }
+
+                // 连接武将选择信号
+                connect(gameWindow, &GameWindow::generalSelected, this, [this](const QString &generalName) {
+                    chatDisplay->append("你选择了武将: " + generalName);
+                });
+
+                // 显示武将选择对话框
+                gameWindow->showGeneralSelectionDialog(lordGenerals);
+            }
         } else {
             allSockets[i]->write(msg.toUtf8());
+
+            // 为其他玩家分配随机武将
+            if (!generalPool.isEmpty()) {
+                // 随机抽取一个武将
+                std::random_device rd;
+                std::mt19937 rng(rd());
+                std::uniform_int_distribution<int> dist(0, generalPool.size() - 1);
+                int randomIndex = dist(rng);
+                QString generalName = generalPool[randomIndex].name;
+                generalPool.removeAt(randomIndex);
+
+                // 发送武将信息给玩家
+                QString generalMsg = "__GENERAL__:" + generalName;
+                allSockets[i]->write(generalMsg.toUtf8());
+            }
         }
     }
 }
@@ -691,3 +749,5 @@ void ChatWindow::onLeaveRoom() {
     // 清空聊天显示
     chatDisplay->clear();
 }
+
+
